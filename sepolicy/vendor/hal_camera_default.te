@@ -1,2 +1,16 @@
 typeattribute hal_camera_default vendor_executes_system_violators;
 allow hal_camera_default system_file:file r_file_perms;
+dontaudit hal_camera_default system_file:file { execute };
+allow hal_camera_default system_file:file { execute };
+dontaudit hal_camera_default default_prop:file { read };
+allow hal_camera_default default_prop:file { read };
+dontaudit hal_camera_default default_prop:file { open };
+allow hal_camera_default default_prop:file { open };
+dontaudit hal_camera_default default_prop:file { getattr };
+allow hal_camera_default default_prop:file { getattr };
+dontaudit hal_camera_default vendor_system_prop:file { read };
+allow hal_camera_default vendor_system_prop:file { read };
+dontaudit hal_camera_default vendor_system_prop:file { open };
+allow hal_camera_default vendor_system_prop:file { open };
+dontaudit hal_camera_default vendor_system_prop:file { getattr };
+allow hal_camera_default vendor_system_prop:file { getattr };

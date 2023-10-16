@@ -1,0 +1,10 @@
+dontaudit mediaserver vendor_file:dir { read };
+allow mediaserver vendor_file:dir { read };
+dontaudit mediaserver vendor_file:dir { open };
+allow mediaserver vendor_file:dir { open };
+dontaudit mediaserver exported_camera_prop:file { read };
+allow mediaserver exported_camera_prop:file { read };
+dontaudit mediaserver exported_camera_prop:file { open };
+allow mediaserver exported_camera_prop:file { open };
+dontaudit mediaserver exported_camera_prop:file { getattr };
+allow mediaserver exported_camera_prop:file { getattr };

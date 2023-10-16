@@ -1,0 +1,4 @@
+dontaudit cameraserver vendor_file:dir { read };
+allow cameraserver vendor_file:dir { read };
+dontaudit cameraserver vendor_file:dir { open };
+allow cameraserver vendor_file:dir { open };
