@@ -1,3 +1,26 @@
 # Dolby
 allow platform_app hal_dms_hwservice:hwservice_manager find;
 allow platform_app hal_dms_default:binder { call transfer };
+
+dontaudit platform_app sysfs_leds:dir { search };
+allow platform_app sysfs_leds:dir { search };
+dontaudit platform_app sensors_panel_prop:file { read }; 
+allow platform_app sensors_panel_prop:file { read };
+dontaudit platform_app sensors_panel_prop:file { open }; 
+allow platform_app sensors_panel_prop:file { open };
+dontaudit platform_app sensors_panel_prop:file { getattr }; 
+allow platform_app sensors_panel_prop:file { getattr };
+dontaudit platform_app exported_camera_prop:file { read };
+allow platform_app exported_camera_prop:file { read };
+dontaudit platform_app exported_camera_prop:file { open };
+allow platform_app exported_camera_prop:file { open };
+dontaudit platform_app exported_camera_prop:file { getattr };
+allow platform_app exported_camera_prop:file { getattr };
+dontaudit platform_app sysfs_graphics:dir { search };
+allow platform_app sysfs_graphics:dir { search };
+dontaudit platform_app sysfs_graphics:file { read };
+allow platform_app sysfs_graphics:file { read };
+dontaudit platform_app sysfs_graphics:file { open };
+allow platform_app sysfs_graphics:file { open };
+dontaudit platform_app sysfs_graphics:file { getattr };
+allow platform_app sysfs_graphics:file { getattr };

@@ -8,12 +8,14 @@ audio.offload.min.duration.secs=15
 audio.offload.video=true
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicerec=false
-persist.vendor.audio.ras.enabled=false
+persist.vendor.audio.fluence.voicerec=true
+persist.vendor.audio.ras.enabled=true
+ro.audio.sdk.ssr=true
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=11
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
+use.voice.path.for.pcm.voip=true
 vendor.audio.adm.buffering.ms=6
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
@@ -60,7 +62,7 @@ vendor.audio.feature.wsa.enable=false
 vendor.audio.feature.audiozoom.enable=false
 vendor.audio.feature.snd_mon.enable=false
 vendor.audio.flac.sw.decoder.24bit=true
-vendor.audio.hw.aac.encoder=false
+vendor.audio.hw.aac.encoder=true
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.gapless.enabled=true
 vendor.audio.offload.multiaac.enable=true
@@ -100,11 +102,13 @@ persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
+camera.hal1.packagelist=com.whatsapp
 persist.camera.stats.test=5
 persist.camera.xm.green.b=0.96
 persist.camera.xm.green.r=0.97
 persist.vendor.camera.HAL3.enabled=1
 persist.vendor.camera.set.afd=4
+vendor.camera.aux.packagelist=com.android.camera,org.lineageos.snap,org.codeaurora.snapcam,com.google.android.GoogleCamera,org.pixelexperience.faceunlock
 vidc.enc.dcvs.extra-buff-count=2
 
 # CNE
