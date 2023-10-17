@@ -12,6 +12,3 @@ vendor_internal_prop(sensors_panel_prop)
 
 # Thermal engine
 vendor_internal_prop(thermal_prop)
-
-#camera_prop
-type exported_camera_prop, property_type;
