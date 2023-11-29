@@ -104,6 +104,8 @@ function blob_fixup() {
             for v in 1.{0..2}; do
                 sed -i "s|android.hardware.radio.config@${v}.so|android.hardware.radio.c_shim@${v}.so|g" "${2}"
             done
+        vendor/lib64/libdlbdsservice.so)
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
     esac
 }
