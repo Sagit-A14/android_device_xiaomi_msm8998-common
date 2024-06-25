@@ -269,7 +269,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi
+    android.hardware.light-service.xiaomi_msm8998
 
 # Lineage Health
 PRODUCT_PACKAGES += \
