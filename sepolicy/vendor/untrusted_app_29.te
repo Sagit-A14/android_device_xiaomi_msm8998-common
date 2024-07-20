@@ -1,0 +1,6 @@
+dontaudit untrusted_app_29 camera_prop:file { read };
+allow untrusted_app_29 camera_prop:file { read };
+dontaudit untrusted_app_29 camera_prop:file { open };
+allow untrusted_app_29 camera_prop:file { open };
+dontaudit untrusted_app_29 camera_prop:file { getattr };
+allow untrusted_app_29 camera_prop:file { getattr };
