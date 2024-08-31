@@ -50,7 +50,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 TARGET_KERNEL_CONFIG := vendor/xiaomi/sagit_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8998
-KERNEL_NO_GCC := true
 KERNEL_CLANG_VERSION := clang-r487747c
 
 BOARD_KERNEL_CMDLINE := androidboot.console=ttyMSM0 androidboot.hardware=qcom
